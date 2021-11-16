@@ -51,7 +51,7 @@ class UserInterface(GameModeObserver):
         except Exception as ex:
             print(ex)
             self.playGameMode = None
-            self.showMessage("Word loading failed :-(")
+            self.showMessage("Echec du chargement du mot")
         
     def showGameRequested(self):
         if self.playGameMode is not None:
@@ -117,7 +117,7 @@ class UserInterface(GameModeObserver):
                 except Exception as ex:
                     print(ex)
                     self.playGameMode = None
-                    self.showMessage("Error during the game update...")
+                    self.showMessage("Erreur au moment du chargement du jeu")
                     
             if self.playGameMode is not None:
                 surface = pygame.Surface(self.window.get_size(),flags=pygame.SRCALPHA)
