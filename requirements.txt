@@ -1,0 +1,4 @@
+vosk==0.3.31
+pygame==2.1.0
+phonex==0.0.2
+pyaudio==0.2.11
